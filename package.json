@@ -1,0 +1,22 @@
+{
+  "name": "playwright-api-testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-conduit": "npx playwright test ./src/tests/API/conduit.api.spec.ts --headed",
+    "test-github": "npx playwright test ./src/tests/API/github.api.spec.ts",
+    "allure": "npx allure generate allure-results --clean && npx allure open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.0",
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.16",
+    "allure-commandline": "^2.27.0",
+    "allure-playwright": "^2.12.0",
+    "dotenv": "^16.4.1"
+  }
+}
